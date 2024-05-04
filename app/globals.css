@@ -33,3 +33,20 @@
     animation: slideUp 0.5s ease forwards;
   }
   
+
+  
+/* Thin scrollbar */
+::-webkit-scrollbar {
+  width: 7px; /* Set the width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar handle */
+  border-radius: 20px;
+}
