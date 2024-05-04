@@ -1,0 +1,9 @@
+ <div className="relative  inline-block cursor-pointer mt-3 lg:mt-0">
+                <button className="bg-blue-500  text-white font-bold py-1 px-4 rounded">
+                  Upload
+                </button>
+                <input
+                  type="file"
+                  className="absolute top-0 left-0 w-full h-full opacity-0 cursor-pointer z-30"
+                />
+              </div>
