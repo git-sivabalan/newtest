@@ -41,7 +41,7 @@ const PerformancePage = () => {
     <div>
       {/* Display current step name, forward and previous buttons for md and smaller devices */}
       <div className="md:hidden">
-        <div className="flex justify-between items-center md:px-4 md:py-10 px-2 text-sm py-7 ">
+        <div className="flex justify-between items-center text-sm px-2 pt-7 pb-4 ">
           <button
             className={`px-2 py-1 bg-[#363636] text-white text-sm  ${
               activeStep == 0
@@ -72,7 +72,7 @@ const PerformancePage = () => {
       {/* Display all steps for lg and larger devices */}
       <div className="hidden md:block">
         <div className="flex justify-center ">
-          <div className="flex space-x-5 py-5">
+          <div className="flex space-x-5 py-2">
             
             {steps.map((step, index) => (
               <div
