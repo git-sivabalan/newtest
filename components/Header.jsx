@@ -19,7 +19,7 @@ const Header = () => {
   };
 
   return (
-    <div className="flex items-center justify-between bg-gray-200 text-white ">
+    <div className="flex items-center justify-between bg-[white] text-white border-b-2">
       <Image src={ksrce} className="w-auto h-20  " />
       <div className="flex items-center align-middle justify-center">
         <div className="px-2 text-black block lg:mr-10">
@@ -42,36 +42,44 @@ const Header = () => {
 
       {isMenuOpen && (
         <div className="lg:hidden h-1/12 absolute inset-x-0 top-0 z-10">
-          <div className=" bg-[#1b1b1b] p-4 flex flex-col justify-between">
+          <div
+            className={`bg-[#1b1b1b]  ${
+              isMenuOpen
+                ? "h-auto animate-slideDown"
+                : "h-0 overflow-hidden animate-slideUp"
+            }`}
+          >
             {/* Correct usage of Link */}
 
-            <Link
-              href="profile"
-              className="block text-white mb-2 hover:bg-white hover:text-black p-3 "
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
-              Profile
-            </Link>
-            <Link
-              href="performance"
-              className="block text-white mb-2 hover:bg-white hover:text-black p-3 "
+            <div className="  p-4 flex flex-col justify-between">
+              <Link
+                href="profile"
+                className="block text-white mb-2 hover:bg-white hover:text-black p-3 "
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+              >
+                Profile
+              </Link>
+              <Link
+                href="performance"
+                className="block text-white mb-2 hover:bg-white hover:text-black p-3 "
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Performance
+              </Link>
+              <Link
+                href="history"
+                className="block text-white hover:bg-white hover:text-black p-3 "
+                onClick={() => setIsMenuOpen(false)}
+              >
+                History
+              </Link>
+            </div>
+            <div
+              className={`text-center flex justify-center bg-red-400 p-3 hover:bg-red-500 hover:cursor-pointer text-xl`}
               onClick={() => setIsMenuOpen(false)}
             >
-              Performance
-            </Link>
-            <Link
-              href="history"
-              className="block text-white hover:bg-white hover:text-black p-3 "
-              onClick={() => setIsMenuOpen(false)}
-            >
-              History
-            </Link>
-          </div>
-          <div
-            className="text-center flex justify-center bg-red-400 p-3 hover:bg-red-500 hover:cursor-pointer text-xl"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            <IoClose />
+              <IoClose />
+            </div>
           </div>
         </div>
       )}
