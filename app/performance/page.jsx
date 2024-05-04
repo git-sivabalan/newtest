@@ -41,9 +41,9 @@ const PerformancePage = () => {
     <div>
       {/* Display current step name, forward and previous buttons for md and smaller devices */}
       <div className="md:hidden">
-        <div className="flex justify-between items-center px-4 py-2">
+        <div className="flex justify-between items-center md:px-4 md:py-10 px-2 text-sm py-7 ">
           <button
-            className={`px-2 py-1 bg-gray-200 text-black rounded ${
+            className={`px-2 py-1 bg-[#363636] text-white text-sm  ${
               activeStep == 0
                 ? "disabled:bg-white disabled:text-white"
                 : "block"
@@ -57,7 +57,7 @@ const PerformancePage = () => {
             {steps[activeStep]}
           </div>
           <button
-            className={`px-2 py-1 bg-gray-200 text-black rounded ${
+            className={`px-2 py-1 bg-[#363636] text-white text-sm  ${
               activeStep == steps.length - 1
                 ? "disabled:bg-white disabled:text-white"
                 : "block"
