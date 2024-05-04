@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 
+
 @keyframes slideDown {
     from {
       transform: translateY(-100%);
@@ -50,3 +51,4 @@
   background: #888; /* Color of the scrollbar handle */
   border-radius: 20px;
 }
+

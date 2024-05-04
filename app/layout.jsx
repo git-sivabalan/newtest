@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
         <div className="hidden lg:flex lg:w-64 bg-gray-800">
           <Sidebar />
         </div>
-        <div className="flex-grow overflow-y-auto p-3 md:px-4 md:py-2 bg-white">
+        <div className="flex-grow overflow-y-auto p-1 md:px-2 md:py-2 bg-white">
           {children}
         </div>
       </div>
