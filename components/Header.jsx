@@ -20,7 +20,7 @@ const Header = () => {
 
   return (
     <div className="flex items-center justify-between bg-[white] text-white border-b-2">
-      <Image src={ksrce} className="w-auto h-20  " />
+      <Image alt="Logo" src={ksrce} className="w-auto h-20  " />
       <div className="flex items-center align-middle justify-center">
         <div className="px-2 text-black block lg:mr-10">
           <button className="md:text-2xl text-xl px-2 md:hover:scale-[1.4]">

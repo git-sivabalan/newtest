@@ -108,10 +108,14 @@ const PerformancePage = () => {
       <div className="mt-4">
         {/* Render components based on activeStep */}
         {activeStep === 0 && <AcademicActivities />}
-        {activeStep === 1 && <StudentDevelopment />}
+        {activeStep === 1 && <AcademicActivities />}
+        {activeStep === 2 && <AcademicActivities />}
+        {activeStep === 3 && <AcademicActivities />}
+        {activeStep === 4 && <AcademicActivities />}
+        {/* {activeStep === 1 && <StudentDevelopment />}
         {activeStep === 2 && <FacultyDevelopment />}
         {activeStep === 3 && <DepartmentDevelopment />}
-        {activeStep === 4 && <ProfessionalDevelopment />}
+        {activeStep === 4 && <ProfessionalDevelopment />} */}
       </div>
     </div>
   );
